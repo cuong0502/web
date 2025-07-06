@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!--internal-->
+    <style>
+        body {
+            width: 100%;
+            height: 100px;
+            font-family: Arial, sans-serif;
+            background-color: #d379796c;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+
+        .box {
+            width: 75%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(194, 71, 71, 0.744);
+        }
+        p1#equal.cong {
+            color: #000;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        #second {
+            color: #e705d4;
+            font-size: 16px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .third {
+            color: #ff0000;
+            font-size: 100%;
+            margin: 5px 5px 10px 5px;
+            padding: 10px;
+            background-color: #78ac87;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Tự học</h1>
+        <p style=" font-size: 18px; color:aqua">Dòng này CSS bằng Inline,mức độ ưu tiên nhất</p>
+        <p id="second">Dòng này được CSS bằng Internal,sử dụng id,mức ưu tiên cao thứ 2 </p>
+        <p class="third">Dòng này được CSS bằng Internal,sử dụng class,mức ưu cao thứ 3</p>
+        <p1 id="equal" class="cong">tổng hợp mức ưu tiên của cả tag,id và class</p1>
+        <h2> Dòng này được CSS bằng External,sử dụng tag name</h2>
+    </div>
+    <div class="list",width: 100%;>
+        <ul>
+            <li>CSS Inline: Sử dụng thuộc tính style trực tiếp trong thẻ HTML.</li>
+            <li>CSS Internal: Được định nghĩa trong thẻ trong phần của tài liệu</li>
+            <li>CSS External: Được liên kết thông qua thẻ và nằm trong một tệp CSS riêng biệt.</li>
+            <li>CSS Selector: Sử dụng các bộ chọn để áp dụng kiểu dáng cho các phần tử cụ thể.</li>
+            <li>CSS Specificity: Quy tắc xác định mức độ ưu tiên của các quy tắc CSS.</li>
+        </ul>
+        <table class="bang">
+            <thead style="font-size:2rem">
+                <th>STT</th>
+                <th>Mức ưu tiên</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Inline CSS (style trực tiếp trong thẻ HTML)</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Internal CSS (định nghĩa trong thẻ )</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>External CSS (liên kết tệp CSS bên ngoài)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>CSS Selector (bộ chọn CSS)</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>CSS Specificity (mức độ ưu tiên của quy tắc CSS)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
